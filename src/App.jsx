@@ -31,7 +31,7 @@ export default function App() {
 function Skeleton({ convertedData = 0, handleConvertedData }) {
   let [currency_1, setCurrency_1] = useState("USD");
   let [currency_2, setCurrency_2] = useState("USD");
-  let [inputAmount, setInputAmount] = useState("10");
+  let [inputAmount, setInputAmount] = useState("0");
   let [loading, setLoading] = useState(false);
   let [error, setError] = useState(null);
 
@@ -84,6 +84,7 @@ function Skeleton({ convertedData = 0, handleConvertedData }) {
         type="number"
         value={inputAmount}
         onChange={(e) => handleInput(Number(e.target.value))}
+        className="inputNumber"
       />
       <span> </span>
       <select
@@ -97,7 +98,7 @@ function Skeleton({ convertedData = 0, handleConvertedData }) {
         <option value="EUR">EUR</option>
         <option value="INR">INR</option>
       </select>
-      <span> TO </span>
+      <span className="to-text"> TO </span>
       <select
         name="currency_2"
         id="currency_2"
