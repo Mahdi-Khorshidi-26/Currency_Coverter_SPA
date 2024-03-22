@@ -18,16 +18,16 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  align-items: center;
-  justify-items: center;
-  grid-gap: 2rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
   width: 100%;
   background-image: linear-gradient(to right bottom, skyblue, dodgerblue);
   padding: 3rem;
   border-radius: 3rem;
   box-shadow: 1rem 2rem 1.5rem skyblue;
+  text-align: center;
 }
 
 .inputNumber {
