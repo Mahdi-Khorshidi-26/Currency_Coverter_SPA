@@ -31,7 +31,7 @@ export default function App() {
 function Skeleton({ convertedData = 0, handleConvertedData }) {
   let [currency_1, setCurrency_1] = useState("USD");
   let [currency_2, setCurrency_2] = useState("USD");
-  let [inputAmount, setInputAmount] = useState("0");
+  let [inputAmount, setInputAmount] = useState("");
   let [loading, setLoading] = useState(false);
   let [error, setError] = useState(null);
 
